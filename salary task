@@ -1,0 +1,41 @@
+let currentDay = 8
+let currentMonth = 10
+let currentYear = 2023
+let joiningDay = 9
+let joiningMonth = 10 
+let joiningYear = 2021
+let salary = 13500
+let increment = 1000
+let n =  (currentYear - joiningYear )
+if ((currentYear === joiningYear)&& (currentMonth >= joiningMonth ))
+{
+  if(currentDay < joiningDay){
+ console.log("salary is Rs.",salary ) 
+  }
+ else if (currentDay > joiningDay){
+   console.log("salary is Rs.", salary + n*1000)
+ }
+}
+else if ((currentYear > joiningYear)&&(currentMonth <= joiningMonth))
+{
+  if(currentDay < joiningDay){
+  console.log("salary is Rs.",salary )
+  }
+  else if(currentDay > joiningDay){
+  console.log("salary is Rs.",salary + n*1000)
+  }
+   else if(currentDay === joiningDay){
+   console.log("salary is Rs.", salary + n*1000)
+ }
+}
+
+else if ((currentYear > joiningYear)&&(currentMonth === joiningMonth))
+{
+  if(currentDay < joiningDay){
+  console.log("salary is Rs.",salary )
+}
+  
+  if(currentDay > joiningDay){
+  console.log("salary is Rs.",salary + n*1000)
+}
+}
